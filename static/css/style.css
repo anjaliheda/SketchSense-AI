@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #8e44ad, #3498db);
+    color: #f4f4f4;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+}
+
+form input, form button {
+    margin: 15px auto;
+    font-size: 1rem;
+}
+
+input[type="file"] {
+    padding: 5px;
+    border: 2px dashed #3498db;
+    border-radius: 8px;
+    background: #f8f9fa;
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    margin: 10px auto;
+    color: #333;
+    text-align: left;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+button {
+    display: flex;
+    padding: 10px 20px;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+footer a {
+    color: #f4f4f4;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: #fff;
+}

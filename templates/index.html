@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchSense AI</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>SketchSense AI</h1>
+    <form action="/process" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <label>
+            <input type="radio" name="feature" value="sketch" required> 🎨 Pencil Sketch
+        </label>
+        <label>
+            <input type="radio" name="feature" value="detect" required> 🔍 Object Detection
+        </label>
+        <button type="submit">Process My Image</button>
+    </form>
+    <footer>
+        <p>Made with ❤️ by Anjali.</p>
+        <a href="/static/pdf/learn_more.pdf" target="_blank" class="learn-more">Learn More</a>
+
+    </footer>
+</body>
+</html>
