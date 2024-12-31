@@ -1,20 +1,17 @@
 # **SketchSense AI** 
 **Transform Images into Pencil Sketches and Detect Objects Using AI!**
 
----
 
 ## **Overview**
 **SketchSense AI** is a web-based application designed to make image processing fun and intelligent. With just a simple image upload, users can:  
 1. **Generate a pencil sketch** of the image.  
 2. **Detect objects** in the image using state-of-the-art AI models.  
 
----
 
 ## **Features**
 - **Pencil Sketch Generator:** Converts your uploaded images into stunning pencil sketches using advanced image processing techniques.  
 - **Object Detection:** Identifies and labels objects in images using the powerful YOLOv8 model.  
 
----
 
 ## **Technologies Used**
 ### **Frontend**
@@ -32,7 +29,6 @@
 ### **Utilities**
 - **Pillow** and **NumPy** for image handling and processing.  
 
----
 
 ## **How It Works**
 ### **Pencil Sketch Generation**
@@ -46,26 +42,6 @@
 2. YOLOv8 model detects objects, annotating them with bounding boxes and confidence scores.  
 3. The processed image is displayed back to the user.  
 
----
-
-## **Project Structure**
-```
-SketchSense-AI/
-├── app.py                 # Main Flask application
-├── requirements.txt       # List of dependencies
-├── templates/
-│   └── index.html         # Frontend HTML
-├── static/
-│   ├── css/
-│   │   └── style.css      # Styling for the webpage
-│   └── uploads/           # Stores uploaded and processed images
-├── utils/
-│   ├── sketch_generator.py  # Sketch generation logic
-│   └── object_detector.py   # Object detection logic
-└── README.md              # Project documentation
-```
-
----
 
 ## **Getting Started**
 ### **Prerequisites**
@@ -88,12 +64,10 @@ SketchSense-AI/
    ```  
 4. Open `http://127.0.0.1:5000` in your browser.  
 
----
 
 ## **Contributing**
 Feel free to fork the repository and submit a pull request. Suggestions and improvements are always welcome!  
 
----
 
 ## **Acknowledgments**
 - Thanks to [Ultralytics](https://github.com/ultralytics) for the YOLOv8 model.  
