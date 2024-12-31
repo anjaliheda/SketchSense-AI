@@ -1,18 +1,18 @@
-SketchSense AI 
-Transform Images into Pencil Sketches and Detect Objects Using AI!
+# **SketchSense AI** 
+**Transform Images into Pencil Sketches and Detect Objects Using AI!**
 
 ---
 
-Overview
-SketchSense AI** is a web-based application designed to make image processing fun and intelligent. With just a simple image upload, users can:  
+## **Overview**
+**SketchSense AI** is a web-based application designed to make image processing fun and intelligent. With just a simple image upload, users can:  
 1. **Generate a pencil sketch** of the image.  
 2. **Detect objects** in the image using state-of-the-art AI models.  
 
 ---
 
 ## **Features**
-- 🎨 **Pencil Sketch Generator:** Converts your uploaded images into stunning pencil sketches using advanced image processing techniques.  
-- 🕵️‍♀️ **Object Detection:** Identifies and labels objects in images using the powerful YOLOv8 model.  
+- **Pencil Sketch Generator:** Converts your uploaded images into stunning pencil sketches using advanced image processing techniques.  
+- **Object Detection:** Identifies and labels objects in images using the powerful YOLOv8 model.  
 
 ---
 
@@ -95,15 +95,6 @@ Feel free to fork the repository and submit a pull request. Suggestions and impr
 
 ---
 
-## **License**
-This project is licensed under the [MIT License](LICENSE).  
-
----
-
 ## **Acknowledgments**
 - Thanks to [Ultralytics](https://github.com/ultralytics) for the YOLOv8 model.  
 - Inspiration and guidance from OpenCV tutorials and Flask documentation.  
-
---- 
-
-Feel free to tweak this as needed. Let me know if you'd like any additional sections! 😊
