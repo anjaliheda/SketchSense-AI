@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchSense AI - Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .result-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin: 20px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .result-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .image-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .image-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-card h2 {
+            color: #333333;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+        }
+        
+        .btn-container {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        
+        .download-btn {
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            background: #88c06a;
+            color: white;
+            border: none;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            background: #7ab15e;
+        }
+        
+        .process-another {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #707d61;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .process-another:hover {
+            background: #5d6850;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <h1>SketchSense AI</h1>
+    <div class="result-container">
+        <div class="result-grid">
+            <div class="image-card">
+                <h2>Pencil Sketch</h2>
+                <img src="{{ url_for('static', filename='results/' + sketch_image) }}" 
+                     alt="Pencil Sketch">
+                <a href="{{ url_for('download', filename=sketch_image) }}" class="download-btn">
+                    Download Sketch
+                </a>
+            </div>
+            
+            <div class="image-card">
+                <h2>Object Detection</h2>
+                <img src="{{ url_for('static', filename='results/' + detect_image) }}" 
+                     alt="Object Detection">
+                <a href="{{ url_for('download', filename=detect_image) }}" class="download-btn">
+                    Download Detection
+                </a>
+            </div>
+        </div>
+        
+        <div class="btn-container">
+            <a href="{{ url_for('index') }}" class="process-another">
+                Process Another Image
+            </a>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Made with ❤️ by Anjali.</p>
+    </footer>
+</body>
+</html>
