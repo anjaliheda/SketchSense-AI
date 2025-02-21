@@ -44,10 +44,10 @@
 
 ## **Screenshots**
 ### **Landing Page**
-![Landing Page](screenshots/landing.png "Landing Page")
+![Landing Page](landing.png "Landing Page")
 
 ### **Result**
-![Result](screenshots/result.png "Result")
+![Result](result.png "Result")
 
 
 ## **Getting Started**
